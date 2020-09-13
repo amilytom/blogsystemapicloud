@@ -41,6 +41,8 @@ function list(req, res) {
       // 如果查询标题存在，查询对象增加标题
       if (req.query.title) {
         whereCondition.title = req.query.title;
+      } else if (req.query.cate) {
+        whereCondition.cate = req.query.cate;
       }
       // 通过offset和limit使用article的model去数据库中查询，并按照创建时间排序
       ArticleModel
