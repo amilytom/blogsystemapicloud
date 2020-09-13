@@ -122,7 +122,7 @@ function info(req, res) {
             // 将查询到的结果给返回对象赋值
             resObj.data = {
               id: result.id,
-              name: result.name,
+              title: result.title,
               desc: result.desc,
               content: result.content,
               cate: result.cate,
